@@ -5,23 +5,27 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdDialogModule } from '@angular/material';
+import { MdButtonModule } from '@angular/material';
+
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { PopupComponent } from './popup.component';
+import { JokeComponent } from './joke/joke.component';
+import { AskComponent } from './ask/ask.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PopupComponent
+    JokeComponent,
+    AskComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
-    MdButtonModule,
-    MdDialogModule
+    MdButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
